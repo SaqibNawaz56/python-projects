@@ -1,0 +1,125 @@
+
+2026-01-10 07:58:11 INFO Application started
+2026-01-10 07:59:02 INFO Loading environment variables
+2026-01-10 08:00:17 ERROR Missing required config: DB_HOST
+2026-01-10 08:00:29 INFO Using fallback configuration
+2026-01-10 08:02:44 ERROR Database authentication failed
+2026-01-10 08:03:10 ERROR Database authentication failed
+2026-01-10 08:04:21 INFO Database connection established
+2026-01-10 08:06:03 WARNING Connection pool near limit
+2026-01-10 08:08:55 ERROR Failed to fetch user profile
+2026-01-10 08:09:14 INFO Retrying profile fetch
+2026-01-10 08:09:46 ERROR Profile fetch timeout
+2026-01-10 08:10:33 INFO Profile fetch succeeded
+2026-01-10 08:12:07 INFO User login attempt
+2026-01-10 08:12:09 ERROR Invalid password attempt
+2026-01-10 08:12:16 ERROR Invalid password attempt
+2026-01-10 08:12:40 INFO User login successful
+2026-01-10 08:15:22 ERROR Redis connection dropped
+2026-01-10 08:16:05 INFO Redis reconnected
+2026-01-10 08:18:31 ERROR Cache write failure
+2026-01-10 08:19:12 ERROR Cache write failure
+2026-01-10 08:19:59 INFO Cache write successful
+2026-01-10 08:22:48 WARNING Slow query detected
+2026-01-10 08:24:03 ERROR Query execution aborted
+2026-01-10 08:26:44 INFO Query executed successfully
+2026-01-10 08:29:17 ERROR Payment gateway unreachable
+2026-01-10 08:29:45 ERROR Payment gateway unreachable
+2026-01-10 08:30:12 INFO Switching to secondary gateway
+2026-01-10 08:31:03 ERROR Payment authorization declined
+2026-01-10 08:31:50 INFO Payment completed
+2026-01-10 08:34:27 ERROR File system write error
+2026-01-10 08:35:02 ERROR File system write error
+2026-01-10 08:35:49 WARNING Disk usage at 91%
+2026-01-10 08:37:16 INFO Log rotation completed
+2026-01-10 08:40:33 ERROR Out of memory exception
+2026-01-10 08:41:02 INFO Memory cleanup triggered
+2026-01-10 08:41:28 ERROR Memory cleanup incomplete
+2026-01-10 08:42:14 INFO Memory stabilized
+2026-01-10 08:44:56 ERROR Failed to serialize JSON response
+2026-01-10 08:46:21 INFO Response serialization fixed
+2026-01-10 08:49:05 ERROR Token signature invalid
+2026-01-10 08:49:44 ERROR Token signature invalid
+2026-01-10 08:50:02 ERROR Token signature invalid
+2026-01-10 08:50:30 INFO Token regenerated
+2026-01-10 08:53:19 ERROR Session store unavailable
+2026-01-10 08:54:11 INFO Session store restored
+2026-01-10 08:57:47 ERROR Webhook processing failed
+2026-01-10 08:58:02 ERROR Webhook processing failed
+2026-01-10 08:59:33 INFO Webhook processed successfully
+2026-01-10 09:02:18 WARNING Email queue backlog
+2026-01-10 09:04:41 ERROR SMTP server not responding
+2026-01-10 09:05:02 ERROR SMTP server not responding
+2026-01-10 09:06:14 INFO SMTP server connected
+2026-01-10 09:09:53 ERROR Failed to generate invoice PDF
+2026-01-10 09:10:31 INFO Invoice regenerated successfully
+2026-01-10 09:13:22 ERROR Analytics pipeline crashed
+2026-01-10 09:14:48 ERROR Analytics pipeline crashed
+2026-01-10 09:15:57 INFO Analytics pipeline restarted
+2026-01-10 09:18:34 ERROR Background job timed out
+2026-01-10 09:19:01 ERROR Background job timed out
+2026-01-10 09:19:46 INFO Background job completed
+2026-01-10 09:22:28 ERROR Rate limit exceeded
+2026-01-10 09:23:09 ERROR Rate limit exceeded
+2026-01-10 09:24:41 INFO Rate limit reset
+2026-01-10 09:27:13 ERROR Message broker disconnected
+2026-01-10 09:27:58 ERROR Message broker disconnected
+2026-01-10 09:28:35 INFO Message broker reconnected
+2026-01-10 09:31:02 ERROR Data corruption detected
+2026-01-10 09:31:29 WARNING Integrity check running
+2026-01-10 09:33:44 INFO Data integrity restored
+2026-01-10 09:36:18 ERROR API returned malformed payload
+2026-01-10 09:37:02 ERROR API returned malformed payload
+2026-01-10 09:38:21 INFO Payload validated
+2026-01-10 09:41:10 ERROR Failed to acquire lock
+2026-01-10 09:41:43 ERROR Deadlock detected
+2026-01-10 09:42:26 INFO Lock released
+2026-01-10 09:45:09 ERROR Unauthorized access attempt
+2026-01-10 09:45:28 ERROR Unauthorized access attempt
+2026-01-10 09:46:11 WARNING Suspicious IP flagged
+2026-01-10 09:49:37 ERROR Scheduled task aborted unexpectedly
+2026-01-10 09:50:18 INFO Scheduled task restarted
+2026-01-10 09:53:55 ERROR Search index corrupted
+2026-01-10 09:54:33 ERROR Search index corrupted
+2026-01-10 09:56:02 INFO Search index rebuilt
+2026-01-10 09:59:14 ERROR Notification service crash
+2026-01-10 09:59:58 INFO Notification service restarted
+2026-01-10 10:03:27 ERROR File upload checksum mismatch
+2026-01-10 10:04:12 ERROR File upload checksum mismatch
+2026-01-10 10:05:48 INFO File upload verified
+2026-01-10 10:08:19 ERROR Config reload failed
+2026-01-10 10:09:02 ERROR Config reload failed
+2026-01-10 10:10:31 INFO Config reloaded successfully
+2026-01-10 10:13:44 ERROR Metrics push failed
+2026-01-10 10:14:28 ERROR Metrics push failed
+2026-01-10 10:15:59 INFO Metrics push successful
+2026-01-10 10:19:03 ERROR Worker thread panic
+2026-01-10 10:19:42 INFO Worker thread restarted
+2026-01-10 10:22:18 ERROR Failed to mount volume
+2026-01-10 10:23:11 INFO Volume mounted
+2026-01-10 10:26:07 ERROR TLS handshake failure
+2026-01-10 10:27:45 INFO TLS handshake successful
+2026-01-10 10:30:39 ERROR Dependency injection failed
+2026-01-10 10:31:18 INFO Dependency resolved
+2026-01-10 10:34:51 ERROR Service health check failed
+2026-01-10 10:35:26 ERROR Service health check failed
+2026-01-10 10:36:42 INFO Service healthy
+2026-01-10 10:40:13 ERROR Unexpected null reference
+2026-01-10 10:41:02 INFO Null reference handled gracefully
+2026-01-10 10:44:57 ERROR Event loop blocked
+2026-01-10 10:46:21 WARNING High CPU usage detected
+2026-01-10 10:48:09 INFO CPU usage normalized
+2026-01-10 10:51:33 ERROR Queue overflow detected
+2026-01-10 10:52:19 ERROR Queue overflow detected
+2026-01-10 10:53:44 INFO Queue stabilized
+2026-01-10 10:56:58 ERROR Critical service dependency missing
+2026-01-10 10:57:21 ERROR Critical service dependency missing
+2026-01-10 10:58:36 INFO Dependency restored
+2026-01-10 11:01:07 ERROR Unhandled promise rejection
+2026-01-10 11:02:19 ERROR Unhandled promise rejection
+2026-01-10 11:03:33 INFO Promise rejection handled
+2026-01-10 11:06:42 ERROR Application panic state entered
+2026-01-10 11:07:15 INFO Recovering from panic state
+2026-01-10 11:08:09 INFO System stabilized
+2026-01-10 11:11:37 INFO Application shutdown initiated
+2026-01-10 11:11:52 INFO Application shutdown completed
