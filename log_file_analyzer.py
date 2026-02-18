@@ -1,40 +1,44 @@
-def count_specific_message():
+def read_log_file(path):
+    try:
+        with open(path, 'r') as file:
+            return file.readlines()
+    except FileNotFoundError:
+        print(f"Error: The file '{path}' was not found.")
+        return []
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []
 
-    log_file_path = 'C:/python-projects/log.txt'
-
+def count_log_levels(lines):
     count = {
         "error_message": 0,
         "info_message": 0,
         "warning_message": 0
     }
+    for line in lines:
+        if 'ERROR' in line:
+            count["error_message"] += 1
+        elif 'INFO' in line:
+            count["info_message"] += 1
+        elif 'WARNING' in line:
+            count["warning_message"] += 1
 
+    return count
+
+def count_logs_per_hour(lines):
     hour_count = {}
 
-    try:
-        with open(log_file_path, 'r') as file:
-            for line in file:
+    for line in lines:
+        hour = line[11:13]
 
-                if 'ERROR' in line:
-                    count["error_message"] += 1
-                elif 'INFO' in line:
-                    count["info_message"] += 1
-                elif 'WARNING' in line:
-                    count["warning_message"] += 1
+        if hour in hour_count:
+            hour_count[hour] += 1
+        else:
+            hour_count[hour] = 1
 
-                hour = line[11:13]
+    return hour_count
 
-                if hour in hour_count:
-                    hour_count[hour] += 1
-                else:
-                    hour_count[hour] = 1
-
-    except FileNotFoundError:
-        print(f"Error: The file '{log_file_path}' was not found.")
-        return
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        return
-
+def find_max_hour(hour_count):
     max_logs = 0
     max_hour = ""
 
@@ -43,6 +47,10 @@ def count_specific_message():
             max_logs = hour_count[h]
             max_hour = h
 
+    return max_hour, max_logs
+
+
+def print_results(count, hour_count, max_hour, max_logs):
     print("ERROR:", count['error_message'])
     print("INFO:", count['info_message'])
     print("WARNING:", count['warning_message'])
@@ -53,5 +61,15 @@ def count_specific_message():
 
     print("\nMaximum logs:", max_logs, "at", max_hour + ":00")
 
+def main():
+    log_file_path = input("Please Enter the Path of File : ")
 
-count_specific_message()
+    lines = read_log_file(log_file_path)
+
+    count = count_log_levels(lines)
+    hour_count = count_logs_per_hour(lines)
+    max_hour, max_logs = find_max_hour(hour_count)
+
+    print_results(count, hour_count, max_hour, max_logs)
+
+main()
